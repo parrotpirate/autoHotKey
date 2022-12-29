@@ -7,7 +7,17 @@
   #MaxThreadsPerHotkey, 2
   SetTitleMatchMode, 2
 
-  ^+r::
+  F12::
+    {
+      Run, powershell -Command "nircmd killprocess HellHades.ArtifactExtractor.exe", ,hide
+      Run, powershell -Command "nircmd killprocess Raid.exe", ,hide
+      Run, powershell -Command "nircmd killprocess PlariumPlayClientService.exe", ,hide
+      Run, powershell -Command "nircmd killprocess PlariumPlayInfo.exe", ,hide
+      sleep 1000
+      Run, powershell -Command "nircmd killprocess PlariumPlay.exe", ,hide
+    }
+
+  F4::
     Toggle := !Toggle
     loop
     {
@@ -20,16 +30,6 @@
       ControlSend, , r, Raid
       WinActivate, %Title%
       sleep 10000
-    }
-
-  ^+q::
-    {
-      Run, powershell -Command "nircmd killprocess HellHades.ArtifactExtractor.exe", ,hide
-      Run, powershell -Command "nircmd killprocess Raid.exe", ,hide
-      Run, powershell -Command "nircmd killprocess PlariumPlayClientService.exe", ,hide
-      Run, powershell -Command "nircmd killprocess PlariumPlayInfo.exe", ,hide
-      sleep 1000
-      Run, powershell -Command "nircmd killprocess PlariumPlay.exe", ,hide
     }
 
 #IfWinExist
