@@ -6,7 +6,6 @@ SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
 ; Hotkey to Close Window with Double-tap of Shift
 Alt::
   If (A_ThisHotkey = A_PriorHotkey AND A_TimeSincePriorHotkey < 200)
-    Send, #{Space}
-    ; Send, {LWinDown}{Space}{LWinUp}
+    Send, <#{Space}
   send, {AltUp}
 Return
