@@ -6,3 +6,5 @@ SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
 #Include %A_ScriptDir%\powerToysRun.ahk
 
 #Include %A_ScriptDir%\GenshinCharacterSwitch.ahk
+
+#Include %A_ScriptDir%\raidShadowLegends.ahk
