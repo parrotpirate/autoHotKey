@@ -18,6 +18,7 @@
     }
 
   F4::
+    ToolTip, Running, 0, 0, 1
     Toggle := !Toggle
     loop
     {
@@ -31,5 +32,6 @@
       WinActivate, %Title%
       sleep 10000
     }
+    ToolTip, , 0, 0, 1
 
 #IfWinExist
