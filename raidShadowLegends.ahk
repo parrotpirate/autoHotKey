@@ -10,6 +10,8 @@
   F12::
     {
       Run, powershell -Command "nircmd killprocess HellHades.ArtifactExtractor.exe", ,hide
+      Run, powershell -Command "nircmd win close ititle 'Hell Hades'", ,hide
+      Run, powershell -Command "nircmd win close ititle 'HellHades'", ,hide
       Run, powershell -Command "nircmd killprocess Raid.exe", ,hide
       Run, powershell -Command "nircmd killprocess PlariumPlayClientService.exe", ,hide
       Run, powershell -Command "nircmd killprocess PlariumPlayInfo.exe", ,hide
