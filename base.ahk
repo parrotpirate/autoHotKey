@@ -7,4 +7,4 @@ SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
 
 #Include %A_ScriptDir%\GenshinCharacterSwitch.ahk
 
-#Include %A_ScriptDir%\raidShadowLegends.ahk
+#Include %A_ScriptDir%\honkaiStarRail.ahk
